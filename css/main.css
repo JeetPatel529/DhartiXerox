@@ -17,10 +17,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -37,7 +38,8 @@ html, body {
     font-family: 'Satoshi-Regular';
 }
 
-*:hover, *:focus {
+*:hover,
+*:focus {
     outline: none;
     box-sizing: border-box;
 }
