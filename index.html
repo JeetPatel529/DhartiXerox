@@ -22,17 +22,17 @@
             <ul class="bg-white flex z-40 rounded-full border border-black  w-fit py-[0.2dvw] px-[0.2dvw] max-[698px]:w-[74dvw] max-[698px]:fixed max-[698px]:right-0 max-[698px]:top-0 max-[698px]:h-[100dvh] max-[698px]:rounded-none max-[698px]:border-0 max-[698px]:bg-black max-[698px]:flex-col max-[698px]:justify-end max-[698px]:pb-[calc(1.8dvw+18px)] max-[442px]:w-[95dvw] max-[698px]:hidden max-[698px]:z-40"
                 id="Menu">
                 <li class="block"> <a href="#AboutUS"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
+                        class="block MenuLink capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         About Us
                     </a>
                 </li>
                 <li class="block"> <a href="#OurService"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
+                        class="block MenuLink capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         our service
                     </a>
                 </li>
                 <li class="block"> <a href="#ContactUS"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
+                        class="block MenuLink capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         Contact Us
                     </a>
                 </li>
@@ -84,13 +84,13 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
-                        10:36 AM
+                        <span id="currentTime">10:36:45 AM </span>
                     </p>
                     <a href="#" class="text-[max(18px,1dvw)]">open google map</a>
                 </div>
                 <div class="flex flex-col gap-[calc(0.2dvw+2px)]">
-                    <p class="text-[max(18px,1dvw)] capitalize">friday</p>
-                    <p class="text-[max(18px,1dvw)] capitalize">July 21, 2023</p>
+                    <p class="text-[max(18px,1dvw)] capitalize" id="currentDay">friday</p>
+                    <p class="text-[max(18px,1dvw)] capitalize" id="currentDate">July 21, 2023</p>
                 </div>
             </div>
             <div class="max-[768px]:w-fit max-[768px]:ml-auto max-[768px]:mt-[calc(1.3dvw+18px)]">
@@ -106,9 +106,9 @@
                     malesuada
                     pellentesque elit eget gravida cum</p>
                 <a href="#ContactUS"
-                    class="capitalize text-white bg-black bg-opacity-90 text-[max(18px,1dvw)] max-[768px]:ml-auto max-[810px]:text-[max(16px,1dvw)] border border-transparent flex items-center justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)]">
+                    class="capitalize text-white bg-black bg-opacity-90 text-[max(18px,1dvw)] max-[768px]:ml-auto max-[810px]:text-[max(16px,1dvw)] border border-transparent flex items-center justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black hover:bg-transparent hover:text-black  group transition">
                     <div
-                        class="mr-[0.8dvw] w-[0.8dvw] h-[0.8dvw] max-[410px]:w-[2dvw] max-[410px]:h-[2dvw] max-[410px]:mr-[2dvw] rounded-full bg-white">
+                        class="mr-[0.8dvw] w-[0.8dvw] h-[0.8dvw] max-[410px]:w-[2dvw] max-[410px]:h-[2dvw] max-[410px]:mr-[2dvw] rounded-full bg-white group-hover:bg-black">
                     </div>
                     Contact
                     Us
@@ -190,7 +190,7 @@
             </div>
         </div>
         <ul class="flex flex-col w-full mt-[calc(4dvw+24px)]">
-            <li class="py-[calc(0.8dvw+6px)] px-[calc(0.6dvw+6px)] border-y-[0.1dvw] border-black border-opacity-90">
+            <li class="py-[calc(0.8dvw+6px)] px-[calc(0.6dvw+6px)] border-y-[0.1dvw] border-black border-opacity-90 ">
                 <div class="flex w-full justify-between items-center  service-row cursor-pointer">
                     <h6 class="font-bold text-[max(18px,1.5dvw)] capitalize tracking-[0.2dvw]">our service</h6>
                     <div
@@ -198,7 +198,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-2 max-[1024px]:grid-cols-3 max-[626px]:grid-cols-1  gap-[calc(2dvw+24px)] max-[698px]:gap-[calc(1dvw+2px)] max-[626px]:gap-[calc(1dvw+18px)] mt-[calc(1.2dvw+24px)] mb-[calc(0.8dvw+18px)] service-content hidden">
+                    class=" grid grid-cols-2 max-[1024px]:grid-cols-3 max-[626px]:grid-cols-1  gap-[calc(2dvw+24px)] max-[698px]:gap-[calc(1dvw+2px)] max-[626px]:gap-[calc(1dvw+18px)] mt-[calc(1.2dvw+24px)] mb-[calc(0.8dvw+18px)] service-content hidden">
                     <div>
                         <ul
                             class="flex flex-col items-start gap-[calc(0.2dvw+2px)] max-[626px]:flex-row max-[626px]:gap-[calc(1dvw+12px)] max-[626px]:flex-wrap">
@@ -434,6 +434,16 @@
 
     <div class="fixed top-0 left-0 bg-white bg-opacity-95 w-full h-full hidden" id="Overlay"></div>
 
+
+
+    <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-sm">
+            <p class="text-lg font-bold mb-4">Shop is Closed</p>
+            <p>Our shop is currently closed. Please visit during our working hours from 10:00 AM to 08:00 PM.</p>
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                onclick="hideModal()">OK</button>
+        </div>
+    </div>
 
 
     <script src="./js/main.js"></script>
