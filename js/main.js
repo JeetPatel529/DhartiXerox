@@ -8,8 +8,11 @@ $(".service-row").click(function () {
 
 $("#MenuOpen").click(function () {
     $("#Menu").toggleClass("max-[698px]:hidden");
+    $("#Overlay").toggleClass("hidden");
 });
 
 $("#MenuClose").click(function () {
     $("#Menu").addClass("max-[698px]:hidden");
+    $("#Overlay").addClass("hidden");
 });
+
