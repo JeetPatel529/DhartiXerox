@@ -73,13 +73,11 @@ function checkShopStatus() {
 
 
     if (DayOfWeek === 0) {
-        // Sunday, set opening time to 10:00 AM and closing time to 12:30 PM
-        openingTime.setHours(10, 0, 0);
+        openingTime.setHours(9, 30, 0);
         closingTime.setHours(12, 30, 0);
     } else {
-        // Other days, set opening time to 10:00 AM and closing time to 08:00 PM
-        openingTime.setHours(10, 0, 0);
-        closingTime.setHours(20, 0, 0);
+        openingTime.setHours(9, 0, 0);
+        closingTime.setHours(21, 0, 0);
     }
 
     if (currentTime < openingTime || currentTime >= closingTime) {
@@ -89,3 +87,34 @@ function checkShopStatus() {
 
 
 checkShopStatus();
+
+
+$(document).ready(function () {
+    $(window).on("contextmenu", function (e) {
+        return false;
+    });
+});
+document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;
+        switch (c) {
+            case 83://Block Ctrl+S
+            case 87://Block Ctrl+W
+            case 85://Block Ctrl+U
+            case 73://Block Ctrl+I
+            case 67: //Block Ctrl+C
+                e.preventDefault();
+                e.stopPropagation();
+                break;
+        }
+    }
+};
+
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) {
+        return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        return false;
+    }
+});
