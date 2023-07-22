@@ -44,6 +44,11 @@ body {
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #000000;
+    color: white;
+}
+
 ::-webkit-scrollbar {
     background-color: transparent;
     width: 0.5dvw;

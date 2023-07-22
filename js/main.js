@@ -4,3 +4,12 @@ $(".service-row").click(function () {
     $(this).toggleClass("service-show");
     $(this).siblings().toggleClass("hidden")
 });
+
+
+$("#MenuOpen").click(function () {
+    $("#Menu").toggleClass("max-[698px]:hidden");
+});
+
+$("#MenuClose").click(function () {
+    $("#Menu").addClass("max-[698px]:hidden");
+});

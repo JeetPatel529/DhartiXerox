@@ -15,27 +15,52 @@
 
 
     <header class="w-full px-[1.2dvw] py-[1.2dvw]">
-        <nav class="flex items-center justify-between w-full gap-[calc(0.2dvw+2px)]">
+        <nav class="flex items-center justify-between w-full gap-[calc(0.2dvw+2px)] max-[698px]:items-center">
             <div>
                 <h2 class="text-black  font-normal text-[max(50px,3.472dvw)]">Bussiness Logo</h2>
             </div>
-            <ul class="bg-white flex z-40 rounded-full border border-black  w-fit py-[0.2dvw] px-[0.2dvw]">
+            <ul class="bg-white flex z-40 rounded-full border border-black  w-fit py-[0.2dvw] px-[0.2dvw] max-[698px]:w-[74dvw] max-[698px]:fixed max-[698px]:right-0 max-[698px]:top-0 max-[698px]:h-[100dvh] max-[698px]:rounded-none max-[698px]:border-0 max-[698px]:bg-black max-[698px]:flex-col max-[698px]:justify-end max-[698px]:pb-[calc(1.8dvw+18px)] max-[442px]:w-[95dvw] max-[698px]:hidden"
+                id="Menu">
                 <li class="block"> <a href="#AboutUS"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black">
+                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         About Us
                     </a>
                 </li>
                 <li class="block"> <a href="#OurService"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black">
+                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         our service
                     </a>
                 </li>
                 <li class="block"> <a href="#ContactUS"
-                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black">
+                        class="block capitalize text-black bg-white text-[max(18px,1dvw)] border border-transparent  justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)] hover:border-black focus:border-black max-[698px]:bg-transparent max-[698px]:text-white max-[698px]:text-[max(42px,3dvw)] max-[442px]:text-[max(34px,2.2dvw)]">
                         Contact Us
                     </a>
                 </li>
+                <div class="hidden max-[698px]:block absolute  max-[698px]:right-[calc(0.6dvw+16px)] max-[698px]:top-[calc(0.6dvw+16px)]"
+                    id="MenuClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M18.3358 20.0962C17.6337 19.602 16.9606 19.0677 16.3198 18.4962C15.6637 17.9522 15.0557 17.3282 14.4317 16.7522C13.8077 16.1762 13.2317 15.5042 12.6557 14.8802C12.0811 14.2197 11.5468 13.5251 11.0557 12.8002C10.8696 12.5257 10.7988 12.1889 10.8586 11.8627C10.9185 11.5364 11.1042 11.2468 11.3757 11.0562C11.5847 10.9186 11.8295 10.8452 12.0797 10.8452C12.33 10.8452 12.5747 10.9186 12.7837 11.0562C13.4882 11.5541 14.1665 12.0882 14.8157 12.6562C15.4557 13.2322 16.0798 13.8242 16.6878 14.4322C17.2638 15.0562 17.8878 15.6482 18.4478 16.3042C19.0158 16.9535 19.5498 17.6317 20.0478 18.3362C20.1431 18.4682 20.2114 18.618 20.2486 18.7765C20.2858 18.9352 20.2911 19.0996 20.2644 19.2604C20.2377 19.421 20.1793 19.5748 20.0926 19.7128C20.006 19.8508 19.8929 19.9703 19.7598 20.0642C19.5522 20.21 19.3062 20.2909 19.0526 20.2965C18.7991 20.3023 18.5495 20.2325 18.3358 20.0962Z"
+                            fill="white" />
+                        <path
+                            d="M11.0557 11.2002C11.5517 10.4962 12.1117 9.84022 12.6557 9.18422C13.1997 8.52822 13.8557 8.00022 14.3997 7.28022C14.9437 6.56022 15.6317 6.09622 16.2718 5.52022C16.921 4.95221 17.5993 4.41816 18.3038 3.92022C18.5436 3.7629 18.8303 3.69302 19.1158 3.72237C19.4012 3.75173 19.6678 3.8785 19.8706 4.08136C20.0734 4.28422 20.2002 4.55078 20.2295 4.83616C20.259 5.12155 20.189 5.40832 20.0318 5.64822C19.542 6.3588 19.0076 7.0375 18.4318 7.68022C17.8398 8.32022 17.2638 8.94422 16.6558 9.55222C16.0478 10.1602 15.4237 10.7522 14.7677 11.3122C14.1117 11.8722 13.4557 12.4322 12.7517 12.9122C12.4816 13.0991 12.1487 13.172 11.8253 13.1151C11.5018 13.0582 11.2138 12.8761 11.0237 12.6082C10.8845 12.3984 10.813 12.1509 10.8187 11.8992C10.8244 11.6475 10.9071 11.4035 11.0557 11.2002Z"
+                            fill="white" />
+                        <path
+                            d="M5.66417 3.90413C6.36628 4.39838 7.03939 4.93259 7.68017 5.50413C8.33617 6.04813 8.94417 6.67213 9.56817 7.24813C10.1922 7.82413 10.7682 8.49613 11.3442 9.12013C11.9188 9.78066 12.4531 10.4752 12.9442 11.2001C13.1303 11.4747 13.2011 11.8114 13.1413 12.1376C13.0814 12.4639 12.8957 12.7536 12.6242 12.9441C12.4152 13.0818 12.1704 13.1551 11.9202 13.1551C11.6699 13.1551 11.4252 13.0818 11.2162 12.9441C10.5117 12.4462 9.83345 11.9121 9.18417 11.3441C8.54417 10.7468 7.92017 10.1655 7.31217 9.60013C6.73617 8.97613 6.11217 8.38413 5.55217 7.72813C4.98414 7.07883 4.45009 6.40059 3.95217 5.69613C3.85675 5.56406 3.78846 5.4144 3.75128 5.25578C3.71408 5.09715 3.70873 4.93272 3.73552 4.77202C3.7623 4.61131 3.82068 4.4575 3.90731 4.31952C3.99393 4.18154 4.10707 4.0621 4.24017 3.96813C4.44443 3.81747 4.68888 3.73096 4.94243 3.71955C5.196 3.70816 5.44721 3.7724 5.66417 3.90413Z"
+                            fill="white" />
+                        <path
+                            d="M12.9445 12.7999C12.4485 13.5039 11.8885 14.1599 11.3445 14.8159C10.8005 15.4719 10.1605 16.0639 9.58445 16.7039C9.00845 17.3439 8.35245 17.8879 7.71245 18.4639C7.06317 19.0319 6.38491 19.566 5.68045 20.0639C5.44055 20.2212 5.15376 20.2911 4.86839 20.2618C4.58299 20.2324 4.31643 20.1056 4.11357 19.9028C3.91071 19.6999 3.78394 19.4333 3.75459 19.1479C3.72525 18.8626 3.79512 18.5757 3.95245 18.3359C4.44216 17.6253 4.97656 16.9466 5.55245 16.3039C6.14445 15.6639 6.72045 15.0399 7.32845 14.4319C7.93645 13.8239 8.56045 13.2319 9.21645 12.6719C9.87245 12.1119 10.5285 11.5519 11.2325 11.0719C11.5025 10.885 11.8354 10.8121 12.1589 10.869C12.4824 10.9259 12.7704 11.108 12.9605 11.3759C13.1055 11.5857 13.1819 11.8354 13.179 12.0904C13.1762 12.3455 13.0942 12.5934 12.9445 12.7999Z"
+                            fill="white" />
+                    </svg>
+                </div>
             </ul>
+            <div class="max-[698px]:block hidden" id="MenuOpen">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="52" height="52">
+                    <path
+                        d="M18 15H10a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2zM18 19H10a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2zM18 11H10a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2zM23 15H21a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM23 19H21a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM21 13h2a1 1 0 0 0 0-2H21a1 1 0 0 0 0 2z"
+                        fill="#000000"></path>
+                </svg>
+            </div>
         </nav>
     </header>
 
@@ -80,7 +105,7 @@
                     neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla
                     malesuada
                     pellentesque elit eget gravida cum</p>
-                <a href="#"
+                <a href="#ContactUS"
                     class="capitalize text-white bg-black bg-opacity-90 text-[max(18px,1dvw)] max-[768px]:ml-auto max-[810px]:text-[max(16px,1dvw)] border border-transparent flex items-center justify-center w-fit rounded-full py-[calc(0.1dvw+4px)] px-[calc(0.8dvw+4px)]">
                     <div
                         class="mr-[0.8dvw] w-[0.8dvw] h-[0.8dvw] max-[410px]:w-[2dvw] max-[410px]:h-[2dvw] max-[410px]:mr-[2dvw] rounded-full bg-white">
